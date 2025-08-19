@@ -5,7 +5,7 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
 {
-  {
+
     enunciado: "Na escola, sua professora de Ciências inicia uma sequência de aulas sobre mudanças climáticas. Ela apresenta dados sobre o aumento da temperatura global e pede que você reflita sobre isso. Qual é sua primeira reação?",
     alternativas: [
       {
