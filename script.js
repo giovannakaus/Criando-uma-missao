@@ -5,103 +5,59 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
 {
-enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que
-consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios
-hiper-realistas. Qual o primeiro pensamento?",
-alternativas: [
-{
-texto: "Isso é assustador!",
-afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
-},
-{
-texto: "Isso é maravilhoso!",
-afirmacao: "Quis saber como usar IA no seu dia a dia."
-}
-]
-},
-{
-enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma
-professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No
-fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual
-atitude você toma?",
-alternativas: [
-{
-
-texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a
-encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o
-entendimento.",
-afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
-},
-{
-texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas
-pesquisas na internet e conhecimentos próprios sobre o tema.",
-afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu
-trabalho."
-}
-]
-},
-{
-enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a
-turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado
-um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se
-posiciona?",
-alternativas: [
-{
-texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e
-melhorar habilidades humanas.",
-afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos
-caminhos profissionais com IA."
-},
-{
-texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e
-defendem a importância de proteger os trabalhadores.",
-afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre
-trabalhadores para discutir meios de utilização de IA de forma ética."
-}
-]
-},
-{
-enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que
-representasse o que pensa sobre IA. E agora?",
-alternativas: [
-{
-texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas
-tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura
-digital para iniciantes."
-},
-{
-texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem
-e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar
-também!"
-}
-]
-},
-{
-enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o
-andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda
-da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-alternativas: [
-{
-
-texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por
-isso não é um problema utilizar o texto inteiro.",
-afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se
-sente dependente da IA para tudo."
-},
-{
-texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção
-pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é
-essencial.",
-afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que
-programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos
-gerados pela IA devem servir como auxílio e não resultado final. "
-}
-]
-},
+  {
+    enunciado: "Na escola, sua professora de Ciências inicia uma sequência de aulas sobre mudanças climáticas. Ela apresenta dados sobre o aumento da temperatura global e pede que você reflita sobre isso. Qual é sua primeira reação?",
+    alternativas: [
+      {
+        texto: "Isso é preocupante!",
+        afirmacao: "Você se mostra consciente dos efeitos negativos das mudanças climáticas."
+      },
+      {
+        texto: "Acho exagero, sempre existiram mudanças no clima.",
+        afirmacao: "Você demonstra ceticismo sobre o impacto das ações humanas no meio ambiente."
+      }
+    ]
+  },
+  {
+    enunciado: "Após a discussão inicial, a professora pede que cada grupo proponha uma ação sustentável que pode ser aplicada na escola ou na comunidade. Qual atitude você toma?",
+    alternativas: [
+      {
+        texto: "Sugere implantar coleta seletiva e reciclagem na escola.",
+        afirmacao: "Sua iniciativa ajuda a conscientizar colegas e reduzir o lixo."
+      },
+      {
+        texto: "Sugere campanhas de conscientização sobre economia de energia.",
+        afirmacao: "Sua ideia contribui para mudanças de hábitos no dia a dia."
+      }
+    ]
+  },
+  {
+    enunciado: "No fim da atividade, surge um debate sobre o papel dos jovens no combate às mudanças climáticas. Como você se posiciona?",
+    alternativas: [
+      {
+        texto: "Defende que os jovens são protagonistas e podem influenciar políticas públicas.",
+        afirmacao: "Sua fala inspira colegas a se engajarem em causas ambientais."
+      },
+      {
+        texto: "Acredita que apenas governos e grandes empresas têm poder para mudar.",
+        afirmacao: "Você aponta para a responsabilidade das instituições em mudanças globais."
+      }
+    ]
+  },
+  {
+    enunciado: "A professora então pede que a turma crie uma campanha de conscientização digital sobre sustentabilidade. Qual recurso você escolhe utilizar?",
+    alternativas: [
+      {
+        texto: "Cria um vídeo educativo com dados e dicas sustentáveis.",
+        afirmacao: "Sua produção ajuda a informar e engajar a comunidade escolar."
+      },
+      {
+        texto: "Elabora posts para redes sociais com ilustrações e frases de impacto.",
+        afirmacao: "Sua ideia alcança muitas pessoas de forma criativa e rápida."
+      }
+    ]
+  }
 ];
-
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
